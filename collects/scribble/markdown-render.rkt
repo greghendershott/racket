@@ -4,6 +4,20 @@
          scribble/text/wrap)
 (provide render-mixin)
 
+;; Just a no-meaning change to test my workflow with topic branches
+;; created off of my forked master. I rebased my master branch back
+;; onto upstream/master. I'd done some merges of topic branches onto
+;; it, which I understand now was not the right thing to do. Now I'm
+;; sticking with `git pull --ff-only upstream master` to update my
+;; master.
+;;
+;; Having done all that, I want to verify that when I push this
+;; test-topic-branch to GitHub, it will be clean and contain only this
+;; one commit. (Previously I would get some extraneous commits,
+;; including merge commits ("Merge branch 'master' of
+;; github.com:plt/racket"). I could clean these up using rebase, but
+;; it was a nuisance.
+
 (define current-preserve-spaces (make-parameter #f))
 
 (define current-indent (make-parameter 0))
